@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- <div class="deal-container">
+        
         <a class = "game-link"   href=""><img class= 'game-image'src= "" alt="Portada del juego"></a>
         <div class="details-container">
             <h2 class="game-title">Elden Ring</h2>
@@ -22,9 +23,20 @@
             <p class="steam-rating">Steam rating: Positive</p>
         </div> -->
     
-        <button class="storeBtn" id="steamBtn"> Steam</button>
-        <button class="storeBtn" id="humbleBtn"> Humble Bundle</button>
-        <button class="storeBtn" id="humbleBtn">Origin</button>
+        <header id ="header" class="header-steam inactive">
+            <img id="steam-header" class="header-img inactive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Steam_2016_logo_black.svg/2560px-Steam_2016_logo_black.svg.png" alt="">
+            <img id = "humble-header" class ="header-img inactive"src="https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2019/03/humblepic.png" alt="">
+            <img id="origin-header" class = "header-img inactive"src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Origin.svg" alt="">
+        </header>
+        <div class="btn-container">
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Steam_2016_logo_black.svg/2560px-Steam_2016_logo_black.svg.png"class="storeBtn" id="steamBtn" onclick="getDeals('1')"></img>
+            <img src = "https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2019/03/humblepic.png"class="storeBtn" id="humbleBtn" onclick="getDeals('11')"></img>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Origin.svg" class="storeBtn" id="originBtn" onclick="getDeals('8')"></img>
+
+        </div>
+        
+        
+        
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
